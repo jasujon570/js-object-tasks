@@ -85,12 +85,9 @@ let myObject = {
 
 };
 
-
-
-for(const prop in myObject){
-    console.log(`key: ${prop} | type: ${typeof myObject[prop]}`);
+for(const key in myObject) {
+    console.log(`key: ${key} | type: ${typeof myObject[key]}`);
 }
-
 
 // **Output:**
 
