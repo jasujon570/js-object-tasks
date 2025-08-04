@@ -59,6 +59,12 @@ let studentInfo = {
 };
 
 console.log(Object.keys(studentInfo).length);
+console.log(Object.values(studentInfo));
+
+const keys = Object.keys(studentInfo);
+for (const key of keys) {
+    console.log(key, ':', studentInfo[key]);
+}
 
 
 
@@ -70,14 +76,21 @@ console.log(Object.keys(studentInfo).length);
 // **Input:**
 // <br>
 
-// let myObject = {
+let myObject = {
 
-//     name: 'John Doe',
-//     age: 25,
-//     city: 'Example City',
-//     isStudent: true
+    name: 'John Doe',
+    age: 25,
+    city: 'Example City',
+    isStudent: true
 
-// };
+};
+
+
+
+for(const prop in myObject){
+    console.log(`key: ${prop} | type: ${typeof myObject[prop]}`);
+}
+
 
 // **Output:**
 
