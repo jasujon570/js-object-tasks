@@ -7,7 +7,7 @@ const colors = {
     "golden rod": '#daa520'
 };
 
-console.log(colors['golden rod']);
+// console.log(colors['golden rod']);
 
 
 
@@ -40,7 +40,7 @@ const student = {
         marks: 30
     }
 };
-console.log(student.physics);
+// console.log(student.physics);
 
 
 
@@ -63,7 +63,7 @@ console.log(Object.values(studentInfo));
 
 const keys = Object.keys(studentInfo);
 for (const key of keys) {
-    console.log(key, ':', studentInfo[key]);
+    // console.log(key, ':', studentInfo[key]);
 }
 
 
@@ -86,7 +86,7 @@ let myObject = {
 };
 
 for(const key in myObject) {
-    console.log(`key: ${key} | type: ${typeof myObject[key]}`);
+    // console.log(`key: ${key} | type: ${typeof myObject[key]}`);
 }
 
 // **Output:**
@@ -97,4 +97,19 @@ for(const key in myObject) {
 //     key: age | type:  number
 //     key: city | type:  string
 //     key: isStudent | type:  boolean
+
+
+
+let anyObject = {
+    name: 'kazi sujon',
+    age : 26,
+    city: 'gazipur sadar',
+    isStudent: true
+};
+
+for (let ob in anyObject) {
+    console.log('key: ' + ob + ' | ' + 'type: ' + typeof(anyObject[ob]));
+    console.log('key: ' + ob + ' | ' + 'type: ' + typeof(anyObject.ob));
+}
+
 
